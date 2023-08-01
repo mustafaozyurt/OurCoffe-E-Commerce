@@ -1,0 +1,146 @@
+.cartscreen {
+  display: flex;
+  justify-content: center;
+  max-width: 1300px;
+  margin: 140px auto;
+}
+
+.cartscreen__inner {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cartscreen h2 {
+  color: #8b4513;
+  margin-bottom: 1rem;
+}
+
+.cartscreen__left {
+  flex: 0.7;
+  margin-right: 1rem;
+  background-color: transparent;
+}
+
+.cartscreen__left__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cartscreen__left__header__title {
+  padding: 20px 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.cartscreen__left__header__sort {
+  max-width: 200px;
+  max-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartscreen__right {
+  flex: 0.3;
+  background: #fff;
+  box-shadow: 0 2px 4px rgb(0, 0, 0, 0.4);
+  height: fit-content;
+}
+
+.cartscreen__right div {
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.cartscreen__right div:last-child {
+  border-bottom: none;
+}
+
+.cartscreen__info p {
+  padding: 8px;
+}
+
+.cartscreen__right div button {
+  padding: 10px 17px;
+  width: 100%;
+  background: #8b4513;
+  color: #f4f4f4;
+  border: 1px solid #8b4513;
+  cursor: pointer;
+}
+
+.cartscreen__right div button:hover {
+  background: #f4f4f4;
+  color: #8b4513;
+}
+
+@media (max-width: 1320px) {
+  .cartscreen {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cartscreen__left__header__sort {
+    border: 3px solid #8b4513;
+  }
+}
+
+@media (min-width: 960px) {
+  .cartscreen__left__header {
+    min-width: 560px;
+  }
+}
+
+@media (max-width: 960px) {
+  .cartscreen {
+    max-width: 800px;
+  }
+
+  .cartscreen__inner {
+    flex-direction: column;
+  }
+
+  .cartscreen__left {
+    margin: 0;
+  }
+
+  .cartscreen__left__header {
+    min-width: 760px;
+  }
+
+  .cartscreen__right {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 800px){
+  .cartscreen__left__header {
+    min-width: 600px;
+  }
+}
+
+@media (max-width: 640px){
+  .cartscreen__left__header {
+    min-width: 440px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cartscreen__left__header {
+    flex-direction: column;
+    padding: 0;
+    min-width: 100%;
+  }
+
+  .cartscreen__left__header__title {
+    padding: 0;
+  }
+
+  .cartscreen__left__header__sort {
+    margin-bottom: 12px;
+    cursor: pointer;
+  }
+}
